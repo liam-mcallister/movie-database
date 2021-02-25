@@ -3,21 +3,30 @@
 *:before,
 *:after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /*---------------------------------App Component----*/
 .container {
     width: 100%;
-    height: 100vh;
+    min-height: 100%;
     background: #232323;
 }
 
-/*------------------------------Header Component----*/
 .header-container {
     padding: 1rem;
     text-align: center;
     background: #e74545;
     color: #232323;
+}
+
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1350px;
+    margin: auto;
 }
 
 /*------------------------------Search Component----*/
@@ -32,6 +41,11 @@
 }
 
 /*-------------------------------Movie Component----*/
+.movie {
+    margin: 1rem;
+    background: #565656;
+    color: #ffffff;
+}
 
 /*------------------------------------------Text----*/
 h1 {
