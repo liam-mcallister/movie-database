@@ -51,7 +51,7 @@ function App() {
 
       <Search search={search} />
 
-      <p>Sharing a few of our favourite movies</p>
+      <p className="fav-movies">Sharing a few of our favourite movies</p>
 
       <div className="movie-container">
         {loading && !error ? loadingMsg : error ? errorMsg : movieList}

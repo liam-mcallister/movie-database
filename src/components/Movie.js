@@ -10,7 +10,9 @@ const Movie = ({ movie }) => {
     <div className="movie">
       <div>
         <img src={poster} alt={`The movie titled: ${movie.Title}`} />
-        <h2>{movie.Title}</h2>
+      </div>
+      <div className="movie__text">
+        <p>{movie.Title}</p>
         <p>({movie.Year})</p>
       </div>
     </div>
