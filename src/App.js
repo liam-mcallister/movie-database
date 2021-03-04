@@ -3,7 +3,7 @@ import Search from "./components/Search";
 import Movie from "./components/Movie";
 import "./App.css";
 
-const MOVIE_API = "http://www.omdbapi.com/?s=man&apikey=15d31ea";
+const MOVIE_API = "https://www.omdbapi.com/?s=man&apikey=15d31ea";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -22,7 +22,7 @@ function App() {
   const search = (searchValue) => {
     setLoading(true);
     setError(null);
-    fetch(`http://www.omdbapi.com/?s=${searchValue}&apikey=15d31ea`)
+    fetch(`https://www.omdbapi.com/?s=${searchValue}&apikey=15d31ea`)
       .then((response) => response.json())
       .then((jsonResponse) => {
         if (jsonResponse.Response === "True") {
