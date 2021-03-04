@@ -3,6 +3,7 @@ import Search from "./components/Search";
 import Movie from "./components/Movie";
 import "./App.css";
 
+// API key for the initial load results
 const MOVIE_API = "https://www.omdbapi.com/?s=man&apikey=15d31ea";
 
 function App() {
